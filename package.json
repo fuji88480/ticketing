@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@bosstickets/common": "^1.0.10"
+  }
+}
