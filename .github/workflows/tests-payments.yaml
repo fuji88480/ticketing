@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      STPIPE_KEY: ${{ secrets.STRIPE_KEY }}
+      STRIPE_KEY: ${{ secrets.STRIPE_KEY }}
     steps:
       - uses: actions/checkout@v2
       - run: cd payments && npm install && npm run test:ci
