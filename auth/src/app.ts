@@ -16,8 +16,11 @@ app.use(
     signed: false,
     // supertestのための対応
     // 'test'ならfalse、それ以外ならtrueを設定
-    secure: process.env.NODE_ENV !== 'test',
-  })
+
+    // https未対応のため
+    // secure: process.env.NODE_ENV !== 'test',
+    secure: false,
+  }),
 );
 
 app.use(currentUserRouter);
